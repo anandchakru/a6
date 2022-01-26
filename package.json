@@ -23,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compress": "npm i --prefix ./.thumbs/ && npm run thumbs --prefix ./.thumbs/ && npm run cache --prefix ./.thumbs/",
+    "compress": "npm i --prefix ./.thumbs/ && npm run thumbs --prefix ./.thumbs/ && npm run cache --prefix ./.thumbs/"
   },
   "eslintConfig": {
     "extends": [
