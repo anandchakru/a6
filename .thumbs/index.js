@@ -33,8 +33,8 @@ const thumbGen = (file, dDir, moveAfterComplete, isLastFile, options) => {
         console.error(`Current Working Directory: ${process.cwd()}`)
         return console.error(`Err while writing: ${err}`)
       } else if (moveAfterComplete) {
-        fs.rename(sFile, `${completeImgDir}${file}`, (err => { }))
         populateImagesJson(sFile, fname)
+        fs.rename(sFile, `${completeImgDir}${file}`, (err => { }))
         if (isLastFile) {
           fs.writeFileSync(imagesFile, JSON.stringify(images));
         }
