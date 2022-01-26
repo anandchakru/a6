@@ -45,7 +45,7 @@ function App() {
         data-src={image.src}
         href={image.src}
       >
-        <img className="img-responsive" src={image.thumb} />
+        <img alt={image.id} className="img-responsive" src={image.thumb} />
       </a>
     });
   }, [images])
