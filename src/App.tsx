@@ -54,7 +54,8 @@ function App() {
       <div className='gallary-wrap'>
         <LightGallery onInit={(detail) => { if (detail) lightGallery.current = detail.instance }}
           plugins={[lgZoom, lgAutoplay, lgFullscreen, lgHash, lgThumbnail]} mode="lg-fade"
-          preload={1}
+          preload={2}
+          mobileSettings={{ controls: false, showCloseIcon: true, download: false }}
         >
           {paintImagees()}
         </LightGallery>
