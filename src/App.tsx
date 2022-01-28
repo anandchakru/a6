@@ -51,7 +51,7 @@ function App() {
   }, [images])
   return (
     <div className="App">
-      <div>
+      <div className='gallary-wrap'>
         <LightGallery onInit={(detail) => { if (detail) lightGallery.current = detail.instance }}
           plugins={[lgZoom, lgAutoplay, lgFullscreen, lgHash, lgThumbnail]} mode="lg-fade"
           preload={1}
